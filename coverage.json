@@ -1,0 +1,1182 @@
+[
+  {
+    "id": "sum",
+    "chapter": 1,
+    "title": "Soma e regra do paralelogramo",
+    "ref": "1.1",
+    "pages": [
+      2,
+      3
+    ],
+    "description": "Some duas flechas, transportando a segunda até a ponta da primeira.",
+    "steps": [
+      "Escolha u e v",
+      "Transporte v sem mudar seu comprimento",
+      "Complete o paralelogramo",
+      "A diagonal é u + v"
+    ]
+  },
+  {
+    "id": "scale",
+    "chapter": 1,
+    "title": "Multiplicação por escalar",
+    "ref": "1.2",
+    "pages": [
+      3,
+      4,
+      5
+    ],
+    "description": "O escalar muda o comprimento e, se negativo, inverte o sentido.",
+    "steps": [
+      "Observe o vetor u",
+      "Escolha o escalar a",
+      "Multiplique cada coordenada por a",
+      "Compare u e au"
+    ]
+  },
+  {
+    "id": "superposition",
+    "chapter": 1,
+    "title": "Superposição de funções",
+    "ref": "1.23",
+    "pages": [
+      10
+    ],
+    "description": "As soluções a cos t + b sen t de y″ + y = 0 formam um espaço vetorial.",
+    "steps": [
+      "Desenhe a cos t",
+      "Desenhe b sen t",
+      "Some as alturas em cada t",
+      "A soma continua resolvendo y″ + y = 0"
+    ]
+  },
+  {
+    "id": "polynomial",
+    "chapter": 1,
+    "title": "Polinômios como vetores",
+    "ref": "1.15",
+    "pages": [
+      7
+    ],
+    "description": "Os coeficientes são coordenadas na base 1, t, t².",
+    "steps": [
+      "Escolha a e b",
+      "Desenhe a função constante a",
+      "Adicione bt",
+      "Adicione t² e leia os coeficientes"
+    ]
+  },
+  {
+    "id": "derivative",
+    "chapter": 1,
+    "title": "Derivação e integração",
+    "ref": "1.50",
+    "pages": [
+      18,
+      19
+    ],
+    "description": "Derivar a integral recupera a função; integrar a derivada perde a constante.",
+    "steps": [
+      "Parta de f(t) = t² + a",
+      "Derive: Df(t) = 2t",
+      "Integre de 0 a t: JDf(t) = t²",
+      "A diferença f − JDf é a constante a"
+    ]
+  },
+  {
+    "id": "rotation",
+    "chapter": 1,
+    "title": "Rotação no plano",
+    "ref": "1.44",
+    "pages": [
+      17
+    ],
+    "description": "A matriz de rotação preserva a origem, ângulos e comprimentos.",
+    "steps": [
+      "Observe os vetores canônicos",
+      "Escolha o ângulo θ",
+      "Gire a malha e o vetor",
+      "Rθ(x,y) = (x cos θ − y sen θ, x sen θ + y cos θ)"
+    ]
+  },
+  {
+    "id": "projection",
+    "chapter": 1,
+    "title": "Projeção e perda de dimensão",
+    "ref": "1.44",
+    "pages": [
+      17
+    ],
+    "description": "A projeção (x,y) ↦ (x,0) conserva uma coordenada e apaga outra.",
+    "steps": [
+      "Observe o plano",
+      "Reduza progressivamente a altura",
+      "Todos os vetores verticais vão a zero",
+      "A imagem é o eixo horizontal"
+    ]
+  },
+  {
+    "id": "translation",
+    "chapter": 1,
+    "title": "Por que translação não é linear?",
+    "ref": "1.46",
+    "pages": [
+      17,
+      18
+    ],
+    "description": "Uma translação não nula leva a origem a um ponto não nulo.",
+    "steps": [
+      "Marque a origem",
+      "Escolha o deslocamento",
+      "Translade toda a malha",
+      "T(0) ≠ 0 impede a linearidade"
+    ]
+  },
+  {
+    "id": "fibers",
+    "chapter": 1,
+    "title": "Fibras, núcleo e imagem",
+    "ref": "1.59",
+    "pages": [
+      22,
+      23
+    ],
+    "description": "Os pontos de uma fibra diferem por um vetor do núcleo.",
+    "steps": [
+      "Considere T(x,y) = x",
+      "Escolha o valor a da imagem",
+      "Destaque a reta x = a",
+      "A fibra é (a,0) + N(T)"
+    ]
+  },
+  {
+    "id": "subspace",
+    "chapter": 2,
+    "title": "O teste de subespaço",
+    "ref": "2.3",
+    "pages": [
+      27,
+      28,
+      29
+    ],
+    "description": "Uma reta pela origem é fechada por soma e produto por escalar.",
+    "steps": [
+      "Observe uma reta pela origem",
+      "Escolha dois vetores da reta",
+      "Some os vetores",
+      "Desloque a reta e verifique que 0 deixa de pertencer"
+    ]
+  },
+  {
+    "id": "union",
+    "chapter": 2,
+    "title": "União versus soma",
+    "ref": "2.16",
+    "pages": [
+      31,
+      32,
+      33
+    ],
+    "description": "A união de duas retas distintas não contém, em geral, a soma de um vetor de cada reta.",
+    "steps": [
+      "Marque os dois eixos",
+      "Escolha u no primeiro e v no segundo",
+      "Some u e v",
+      "A soma dos subespaços é o plano, mas a união não é"
+    ]
+  },
+  {
+    "id": "planes",
+    "chapter": 2,
+    "title": "Interseção de planos",
+    "ref": "2.87",
+    "pages": [
+      56,
+      57
+    ],
+    "description": "Dois planos distintos pela origem em R³ se intersectam em uma reta.",
+    "steps": [
+      "Construa o plano xy",
+      "Construa o plano xz",
+      "Destaque o eixo x comum",
+      "2 + 2 − 1 = 3 é a dimensão da soma"
+    ]
+  },
+  {
+    "id": "direct",
+    "chapter": 2,
+    "title": "Soma direta e decomposição",
+    "ref": "2.27",
+    "pages": [
+      35
+    ],
+    "description": "Duas retas distintas pela origem de R² dão uma decomposição única de cada vetor.",
+    "steps": [
+      "Escolha duas retas independentes",
+      "Construa a parcela na primeira",
+      "Construa a parcela na segunda",
+      "Some as parcelas: a decomposição é única"
+    ]
+  },
+  {
+    "id": "symmetric",
+    "chapter": 2,
+    "title": "Partes simétrica e antissimétrica",
+    "ref": "2.23",
+    "pages": [
+      33,
+      34
+    ],
+    "description": "Toda matriz se decompõe como (A + Aᵀ)/2 + (A − Aᵀ)/2.",
+    "steps": [
+      "Escreva a matriz A",
+      "Calcule a transposta",
+      "Separe a parte simétrica",
+      "Adicione a parte antissimétrica e recupere A"
+    ]
+  },
+  {
+    "id": "parity",
+    "chapter": 2,
+    "title": "Funções pares e ímpares",
+    "ref": "2.29",
+    "pages": [
+      35,
+      36
+    ],
+    "description": "f(t) = (f(t)+f(−t))/2 + (f(t)−f(−t))/2.",
+    "steps": [
+      "Observe f(t) = t² + at",
+      "Reflita o argumento: f(−t)",
+      "A média é a parte par t²",
+      "A diferença dividida por 2 é a parte ímpar at"
+    ]
+  },
+  {
+    "id": "span",
+    "chapter": 2,
+    "title": "Geradores e dependência linear",
+    "ref": "2.44",
+    "pages": [
+      40,
+      41,
+      42
+    ],
+    "description": "Dois vetores não paralelos geram o plano; quando ficam paralelos, geram uma reta.",
+    "steps": [
+      "Escolha o segundo vetor",
+      "Construa combinações au + bv",
+      "Observe a região alcançada",
+      "Se o determinante zera, a dimensão cai"
+    ]
+  },
+  {
+    "id": "basis",
+    "chapter": 2,
+    "title": "Coordenadas em outra base",
+    "ref": "2.72",
+    "pages": [
+      50
+    ],
+    "description": "Na base ((1,1),(1,−1)), o vetor (3,1) tem coordenadas (2,1).",
+    "steps": [
+      "Marque os vetores da base",
+      "Construa 2(1,1)",
+      "Adicione (1,−1)",
+      "O vetor final é (3,1), com coordenadas (2,1)"
+    ]
+  },
+  {
+    "id": "completion",
+    "chapter": 2,
+    "title": "Completamento de uma base",
+    "ref": "2.79",
+    "pages": [
+      53,
+      54
+    ],
+    "description": "Acrescente vetores fora do subespaço já gerado até obter uma base.",
+    "steps": [
+      "Comece com e₁",
+      "Acrescente e₂ fora da reta",
+      "Acrescente e₃ fora do plano",
+      "Os três vetores geram R³ e são LI"
+    ]
+  },
+  {
+    "id": "ranknull",
+    "chapter": 2,
+    "title": "Teorema do núcleo e da imagem",
+    "ref": "2.92",
+    "pages": [
+      59,
+      60
+    ],
+    "description": "Para T(x,y,z) = (x,y,0), uma dimensão é apagada e duas sobrevivem.",
+    "steps": [
+      "Observe uma base de R³",
+      "Aplique T a cada vetor",
+      "e₃ gera o núcleo e e₁,e₂ geram a imagem",
+      "3 = 1 + 2: dimensão = nulidade + posto"
+    ]
+  },
+  {
+    "id": "matrixmap",
+    "chapter": 3,
+    "title": "Matriz de uma transformação",
+    "ref": "3.3",
+    "pages": [
+      63,
+      64
+    ],
+    "description": "As colunas da matriz são as imagens dos vetores da base.",
+    "steps": [
+      "Observe e₁ e e₂",
+      "Leia a primeira coluna como T(e₁)",
+      "Leia a segunda como T(e₂)",
+      "T(x,y) = xT(e₁) + yT(e₂)"
+    ]
+  },
+  {
+    "id": "composition",
+    "chapter": 3,
+    "title": "Composição de transformações",
+    "ref": "3.7",
+    "pages": [
+      65,
+      66
+    ],
+    "description": "O produto AB aplica B primeiro e A depois.",
+    "steps": [
+      "Observe o vetor inicial",
+      "Aplique o cisalhamento B",
+      "Aplique a dilatação A ao resultado",
+      "Compare com o produto AB"
+    ]
+  },
+  {
+    "id": "similarity",
+    "chapter": 3,
+    "title": "Mudança de base de um operador",
+    "ref": "3.14",
+    "pages": [
+      69,
+      70
+    ],
+    "description": "P⁻¹AP descreve o mesmo operador usando coordenadas diferentes.",
+    "steps": [
+      "Escreva o vetor na base B",
+      "P converte as coordenadas para a base canônica",
+      "A aplica o operador",
+      "P⁻¹ retorna às coordenadas em B"
+    ]
+  },
+  {
+    "id": "gauss",
+    "chapter": 3,
+    "title": "Eliminação de Gauss",
+    "ref": "3.30",
+    "pages": [
+      75,
+      76
+    ],
+    "description": "Operações elementares preservam o conjunto solução. Exemplo interativo: x+y=3 e 2x−y=0.",
+    "steps": [
+      "Escreva a matriz aumentada",
+      "L₂ ← L₂ − 2L₁",
+      "L₂ ← −L₂/3",
+      "L₁ ← L₁ − L₂: x=1 e y=2"
+    ]
+  },
+  {
+    "id": "systems",
+    "chapter": 3,
+    "title": "Sistemas: única, nenhuma ou infinitas",
+    "ref": "3.32",
+    "pages": [
+      76,
+      77
+    ],
+    "description": "A posição relativa das retas representa a compatibilidade do sistema.",
+    "steps": [
+      "Desenhe x+y=3",
+      "Desenhe a segunda equação",
+      "Compare os coeficientes e os termos independentes",
+      "Leia a interseção ou a ausência dela"
+    ]
+  },
+  {
+    "id": "inverse",
+    "chapter": 3,
+    "title": "Inversa por escalonamento",
+    "ref": "3.36",
+    "pages": [
+      78,
+      79
+    ],
+    "description": "Aplicar operações a [A",
+    "steps": [
+      "I] até obter [I|A⁻¹] constrói a inversa.|Monte [A|I] para A=[[1,1],[0,1]]",
+      "O pivô da segunda linha já é 1",
+      "L₁ ← L₁ − L₂",
+      "O bloco direito é [[1,−1],[0,1]]"
+    ]
+  },
+  {
+    "id": "area",
+    "chapter": 4,
+    "title": "Determinante como área orientada",
+    "ref": "4.15",
+    "pages": [
+      86,
+      87
+    ],
+    "description": "O paralelogramo das colunas tem área igual ao módulo do determinante.",
+    "steps": [
+      "Marque as duas colunas",
+      "Construa o paralelogramo",
+      "Calcule ad − bc",
+      "O sinal distingue as duas orientações"
+    ]
+  },
+  {
+    "id": "detops",
+    "chapter": 4,
+    "title": "Operações e determinante",
+    "ref": "4.10",
+    "pages": [
+      91,
+      92
+    ],
+    "description": "Somar um múltiplo de uma coluna a outra preserva o determinante.",
+    "steps": [
+      "Construa o paralelogramo inicial",
+      "Some a vezes a primeira coluna à segunda",
+      "Observe o cisalhamento",
+      "Base e altura, portanto área, são preservadas"
+    ]
+  },
+  {
+    "id": "laplace",
+    "chapter": 4,
+    "title": "Laplace e cofatores",
+    "ref": "4.20",
+    "pages": [
+      96,
+      97,
+      98
+    ],
+    "description": "Expanda o determinante por uma linha, com os sinais alternados dos cofatores.",
+    "steps": [
+      "Observe a matriz 3×3",
+      "Selecione o elemento (1,1) e seu menor",
+      "Selecione (1,2), com sinal negativo",
+      "Some os três produtos com cofatores"
+    ]
+  },
+  {
+    "id": "detproduct",
+    "chapter": 4,
+    "title": "Determinante de um produto",
+    "ref": "4.21",
+    "pages": [
+      97,
+      98
+    ],
+    "description": "Os fatores de área se multiplicam na composição.",
+    "steps": [
+      "Comece com o quadrado unitário",
+      "Aplique B, de determinante 1",
+      "Aplique A, de determinante 2",
+      "A área final é det(A)det(B)=2"
+    ]
+  },
+  {
+    "id": "lagrange",
+    "chapter": 5,
+    "title": "Interpolação de Lagrange",
+    "ref": "5.13",
+    "pages": [
+      108,
+      109
+    ],
+    "description": "As funções básicas valem 1 em um nó e 0 nos demais; os valores determinam o polinômio.",
+    "steps": [
+      "Marque os nós −1,0,1",
+      "Construa a base de Lagrange",
+      "Multiplique cada função pelo valor no nó",
+      "Some para interpolar os três valores"
+    ]
+  },
+  {
+    "id": "functional",
+    "chapter": 5,
+    "title": "Funcionais e curvas de nível",
+    "ref": "5.7",
+    "pages": [
+      105,
+      106
+    ],
+    "description": "Um funcional não nulo em R² tem retas paralelas como níveis e uma reta como núcleo.",
+    "steps": [
+      "Escolha φ(x,y)=x+ay",
+      "Desenhe o nível zero",
+      "Desenhe os níveis não nulos",
+      "O núcleo tem dimensão 1"
+    ]
+  },
+  {
+    "id": "dual",
+    "chapter": 5,
+    "title": "Base dual e leitura de coordenadas",
+    "ref": "5.9",
+    "pages": [
+      106,
+      107
+    ],
+    "description": "A base dual extrai os coeficientes na base escolhida.",
+    "steps": [
+      "Use a base (1,1),(1,−1)",
+      "Escreva v = a(1,1)+b(1,−1)",
+      "Aplique φ₁(x,y)=(x+y)/2",
+      "Aplique φ₂(x,y)=(x−y)/2"
+    ]
+  },
+  {
+    "id": "transpose",
+    "chapter": 5,
+    "title": "Transposta e composição de funcionais",
+    "ref": "5.17",
+    "pages": [
+      110,
+      111
+    ],
+    "description": "A transposta leva φ a φ∘T: o funcional age depois da transformação.",
+    "steps": [
+      "Defina T(x,y)=(x+ay,y)",
+      "Escolha φ(x,y)=x",
+      "Calcule φ(T(x,y))=x+ay",
+      "O vetor de coeficientes é Aᵀ(1,0)"
+    ]
+  },
+  {
+    "id": "annihilator",
+    "chapter": 5,
+    "title": "Anulador de um subespaço",
+    "ref": "5.25",
+    "pages": [
+      114,
+      115
+    ],
+    "description": "O anulador contém os funcionais que se anulam no subespaço.",
+    "steps": [
+      "Escolha S gerado por (1,a)",
+      "Construa o funcional φ(x,y)=−ax+y",
+      "Avalie φ em um vetor de S",
+      "φ vale zero em toda a reta S"
+    ]
+  },
+  {
+    "id": "quotient",
+    "chapter": 5,
+    "title": "Quocientes: colapsar uma direção",
+    "ref": "5.41",
+    "pages": [
+      120,
+      121,
+      122
+    ],
+    "description": "Em R² módulo o eixo horizontal, cada reta horizontal é uma única classe.",
+    "steps": [
+      "Escolha uma reta horizontal",
+      "Mova o representante ao longo dela",
+      "Todos os representantes têm a mesma classe",
+      "Identifique a classe pela coordenada y"
+    ]
+  },
+  {
+    "id": "isomorphism",
+    "chapter": 5,
+    "title": "Primeiro teorema do isomorfismo",
+    "ref": "5.48",
+    "pages": [
+      124,
+      125
+    ],
+    "description": "Ao identificar pontos que diferem pelo núcleo, T passa a ser injetora no quociente.",
+    "steps": [
+      "Considere T(x,y)=y",
+      "Destaque uma fibra horizontal",
+      "Identifique os pontos da mesma fibra",
+      "R²/N(T) é isomorfo a R"
+    ]
+  },
+  {
+    "id": "dot",
+    "chapter": 6,
+    "title": "Produto interno e ângulo",
+    "ref": "6.11",
+    "pages": [
+      132
+    ],
+    "description": "O produto interno é o produto das normas vezes o cosseno do ângulo.",
+    "steps": [
+      "Marque u e v",
+      "Compare suas direções",
+      "Projete v na direção de u",
+      "u·v = ‖u‖‖v‖ cos θ"
+    ]
+  },
+  {
+    "id": "cauchy",
+    "chapter": 6,
+    "title": "Cauchy–Schwarz",
+    "ref": "6.9",
+    "pages": [
+      130,
+      131
+    ],
+    "description": "A componente de v na direção de u não pode ser maior que o próprio v.",
+    "steps": [
+      "Escolha dois vetores",
+      "Projete v na reta de u",
+      "Compare o comprimento projetado com ‖v‖",
+      "|u·v| ≤ ‖u‖‖v‖, com igualdade se são dependentes"
+    ]
+  },
+  {
+    "id": "gram",
+    "chapter": 6,
+    "title": "Gram–Schmidt no espaço",
+    "ref": "6.19",
+    "pages": [
+      134,
+      135
+    ],
+    "description": "O exemplo usa v₁=(1,1,0), v₂=(1,0,1), v₃=(0,1,1).",
+    "steps": [
+      "Tome w₁=v₁",
+      "Subtraia de v₂ a projeção em w₁",
+      "Subtraia de v₃ as projeções em w₁ e w₂",
+      "Normalize os três vetores ortogonais"
+    ]
+  },
+  {
+    "id": "legendre",
+    "chapter": 6,
+    "title": "Polinômios de Legendre",
+    "ref": "6.20",
+    "pages": [
+      136
+    ],
+    "description": "Gram–Schmidt aplicado a 1,t,t² produz 1,t,t²−1/3 antes de normalizar.",
+    "steps": [
+      "Observe 1 e t",
+      "A integral de t em [−1,1] é zero",
+      "Retire de t² sua projeção nas constantes",
+      "A integral de t²−1/3 em [−1,1] é zero"
+    ]
+  },
+  {
+    "id": "nearest",
+    "chapter": 6,
+    "title": "Projeção e melhor aproximação",
+    "ref": "6.28",
+    "pages": [
+      138,
+      139
+    ],
+    "description": "O pé da perpendicular é o ponto do subespaço mais próximo do vetor.",
+    "steps": [
+      "Escolha o vetor v",
+      "Calcule sua projeção em S",
+      "Escolha outro ponto s de S",
+      "Pitágoras mostra que ‖v−s‖² = ‖v−Pv‖² + ‖Pv−s‖²"
+    ]
+  },
+  {
+    "id": "approx",
+    "chapter": 6,
+    "title": "Aproximar t³ por uma reta",
+    "ref": "6.29",
+    "pages": [
+      139
+    ],
+    "description": "No produto interno integral em [−1,1], a melhor aproximação é (3/5)t.",
+    "steps": [
+      "Desenhe t³ em [−1,1]",
+      "Experimente a reta at",
+      "Compare o erro quadrático integrado",
+      "O mínimo ocorre em a=3/5, com erro 8/175"
+    ]
+  },
+  {
+    "id": "least",
+    "chapter": 6,
+    "title": "Mínimos quadrados: ajuste de reta",
+    "ref": "6.31",
+    "pages": [
+      140,
+      141
+    ],
+    "description": "Os pontos (0,1),(1,3),(2,4),(3,4) têm melhor ajuste y=3/2+x.",
+    "steps": [
+      "Observe os quatro pontos",
+      "Experimente a reta y=a+bx",
+      "Desenhe os resíduos verticais",
+      "As equações normais dão a=1,5 e b=1"
+    ]
+  },
+  {
+    "id": "riesz",
+    "chapter": 6,
+    "title": "Riesz: vetor e funcional",
+    "ref": "6.34",
+    "pages": [
+      142,
+      143
+    ],
+    "description": "No produto escalar usual, todo funcional tem a forma φ(v)=u·v para um único u.",
+    "steps": [
+      "Escolha u=(1,a)",
+      "Defina φ(v)=u·v",
+      "Desenhe as retas de nível",
+      "O vetor u é perpendicular ao núcleo do funcional"
+    ]
+  },
+  {
+    "id": "wedge",
+    "chapter": 7,
+    "title": "Produto exterior e orientação",
+    "ref": "7.10",
+    "pages": [
+      150,
+      151
+    ],
+    "description": "Em R², dx∧dy(u,v) é o determinante das coordenadas dos dois vetores.",
+    "steps": [
+      "Marque u e v",
+      "Meça a área orientada",
+      "Inverta a ordem dos vetores",
+      "A troca muda o sinal; vetores dependentes dão zero"
+    ]
+  },
+  {
+    "id": "cross",
+    "chapter": 7,
+    "title": "Produto vetorial em R³",
+    "ref": "7.14",
+    "pages": [
+      151,
+      152
+    ],
+    "description": "O produto vetorial é perpendicular aos dois vetores e seu comprimento mede a área.",
+    "steps": [
+      "Escolha u e v no plano xy",
+      "Construa o paralelogramo",
+      "Desenhe u×v perpendicular ao plano",
+      "Compare sua norma com a área"
+    ]
+  },
+  {
+    "id": "contraction",
+    "chapter": 7,
+    "title": "Contração e complexo",
+    "ref": "7.22",
+    "pages": [
+      155,
+      156
+    ],
+    "description": "Inserir o mesmo vetor duas vezes em uma forma alternada produz zero.",
+    "steps": [
+      "Tome a forma dx∧dy e v=e₁",
+      "Contraia: ιᵥ(dx∧dy)=dy",
+      "Contraia novamente: dy(e₁)=0",
+      "Logo ιᵥ²=0"
+    ]
+  },
+  {
+    "id": "exact",
+    "chapter": 7,
+    "title": "Sequência exata curta",
+    "ref": "7.24",
+    "pages": [
+      156,
+      157
+    ],
+    "description": "A inclusão do eixo x e a projeção na coordenada y dão 0→R→R²→R→0.",
+    "steps": [
+      "Inclua x como (x,0)",
+      "A imagem é o eixo horizontal",
+      "Projete (x,y) em y",
+      "O núcleo da projeção coincide com a imagem da inclusão"
+    ]
+  },
+  {
+    "id": "euler",
+    "chapter": 7,
+    "title": "Cohomologia e característica de Euler",
+    "ref": "7.32",
+    "pages": [
+      158,
+      159
+    ],
+    "description": "As dimensões das imagens vizinhas se cancelam na soma alternada.",
+    "steps": [
+      "Divida cada espaço em imagem, cohomologia e complemento",
+      "Associe a imagem ao complemento anterior",
+      "Cancele as contribuições de sinais opostos",
+      "Só resta a soma alternada das dimensões das cohomologias"
+    ]
+  },
+  {
+    "id": "eigen",
+    "chapter": 8,
+    "title": "Autovetores: direções preservadas",
+    "ref": "8.12",
+    "pages": [
+      164,
+      165
+    ],
+    "description": "Para A=[[2,1],[1,2]], (1,1) tem autovalor 3 e (1,−1), autovalor 1.",
+    "steps": [
+      "Escolha a direção de v",
+      "Aplique A",
+      "Compare v e Av",
+      "Nas duas direções próprias, Av é múltiplo de v"
+    ]
+  },
+  {
+    "id": "reflection",
+    "chapter": 8,
+    "title": "Reflexão e projeção: autovalores",
+    "ref": "8.4",
+    "pages": [
+      162,
+      163
+    ],
+    "description": "A reflexão no eixo x preserva vetores horizontais e inverte os verticais.",
+    "steps": [
+      "Observe os eixos",
+      "Reflita o vetor no eixo x",
+      "No eixo x, λ=1",
+      "No eixo y, λ=−1"
+    ]
+  },
+  {
+    "id": "shear",
+    "chapter": 8,
+    "title": "Cisalhamento e falha da diagonalização",
+    "ref": "8.29",
+    "pages": [
+      171,
+      172
+    ],
+    "description": "O cisalhamento não trivial tem apenas uma direção própria, insuficiente para uma base.",
+    "steps": [
+      "Observe o eixo x fixo",
+      "Aplique o cisalhamento",
+      "Vetores fora do eixo x mudam de direção",
+      "λ=1 tem multiplicidade algébrica 2, mas geométrica 1"
+    ]
+  },
+  {
+    "id": "powers",
+    "chapter": 8,
+    "title": "Diagonalização e potências",
+    "ref": "8.32",
+    "pages": [
+      172,
+      173
+    ],
+    "description": "Na base de autovetores, elevar A a uma potência significa elevar cada autovalor.",
+    "steps": [
+      "Decomponha v em (1,1) e (1,−1)",
+      "A primeira componente é multiplicada por 3",
+      "A segunda é multiplicada por 1",
+      "Aⁿv = 3ⁿv₃ + v₁"
+    ]
+  },
+  {
+    "id": "fibonacci",
+    "chapter": 8,
+    "title": "Fibonacci por matrizes",
+    "ref": "8.34",
+    "pages": [
+      173,
+      174
+    ],
+    "description": "A matriz [[1,1],[1,0]] transforma (Fₙ₊₁,Fₙ) em (Fₙ₊₂,Fₙ₊₁).",
+    "steps": [
+      "Comece com (1,0)",
+      "Some as duas coordenadas",
+      "Desloque a primeira para a segunda posição",
+      "Repita e acompanhe a sequência de Fibonacci"
+    ]
+  },
+  {
+    "id": "complex",
+    "chapter": 8,
+    "title": "Autovalores complexos e rotação",
+    "ref": "8.49",
+    "pages": [
+      178,
+      179
+    ],
+    "description": "A matriz [[a,−b],[b,a]] representa multiplicação pelo número complexo a+ib.",
+    "steps": [
+      "Identifique (x,y) com x+iy",
+      "Escolha o número a+ib",
+      "Multiplique o vetor pelo módulo",
+      "Gire pelo argumento do número complexo"
+    ]
+  },
+  {
+    "id": "cayley",
+    "chapter": 8,
+    "title": "Cayley–Hamilton em ação",
+    "ref": "8.56",
+    "pages": [
+      181,
+      182,
+      183
+    ],
+    "description": "Para A=[[2,1],[1,2]], p(A)=A²−4A+3I=0.",
+    "steps": [
+      "Escreva o polinômio λ²−4λ+3",
+      "Calcule A²",
+      "Subtraia 4A",
+      "Some 3I: a matriz resultante é zero"
+    ]
+  },
+  {
+    "id": "nilpotent",
+    "chapter": 8,
+    "title": "Polinômio mínimo e nilpotência",
+    "ref": "8.63",
+    "pages": [
+      184,
+      185
+    ],
+    "description": "Para N=[[0,1],[0,0]], N≠0 e N²=0: seu polinômio mínimo é t².",
+    "steps": [
+      "Escolha um vetor v",
+      "Aplique N: (x,y)↦(y,0)",
+      "Aplique N outra vez: todos vão a zero",
+      "N não é diagonalizável, pois seu polinômio mínimo tem raiz dupla"
+    ]
+  },
+  {
+    "id": "spectral",
+    "chapter": 9,
+    "title": "Teorema espectral",
+    "ref": "9.5",
+    "pages": [
+      188,
+      189
+    ],
+    "description": "Uma matriz real simétrica admite uma base ortonormal de autovetores.",
+    "steps": [
+      "Observe A=[[2,1],[1,2]]",
+      "Gire os eixos em 45 graus",
+      "Nessa base, A é diagonal com entradas 3 e 1",
+      "As direções próprias são ortogonais"
+    ]
+  },
+  {
+    "id": "rayleigh",
+    "chapter": 9,
+    "title": "Quociente de Rayleigh",
+    "ref": "9.6",
+    "pages": [
+      189,
+      190
+    ],
+    "description": "Para vetores unitários, vᵀAv varia entre o menor e o maior autovalor.",
+    "steps": [
+      "Escolha v no círculo unitário",
+      "Calcule vᵀAv",
+      "Gire v e acompanhe o valor",
+      "Os extremos 1 e 3 ocorrem nas direções próprias"
+    ]
+  },
+  {
+    "id": "quadratic",
+    "chapter": 9,
+    "title": "Formas quadráticas e eixos principais",
+    "ref": "9.17",
+    "pages": [
+      193,
+      194
+    ],
+    "description": "5x²−4xy+8y² vira 4u²+9v² em eixos próprios.",
+    "steps": [
+      "Observe a elipse de nível 36",
+      "Localize os autovetores (2,1) e (1,−2)",
+      "Gire os eixos para essas direções",
+      "Os semieixos são 3 e 2"
+    ]
+  },
+  {
+    "id": "signature",
+    "chapter": 9,
+    "title": "Assinatura e lei de inércia",
+    "ref": "9.20",
+    "pages": [
+      195,
+      196
+    ],
+    "description": "O número de direções positivas e negativas é preservado por mudanças de coordenadas invertíveis.",
+    "steps": [
+      "Escolha q(x,y)=x²+ay²",
+      "Observe os sinais dos coeficientes",
+      "Compare elipse, hipérbole e caso degenerado",
+      "Mudar a assinatura exige passar por uma forma singular"
+    ]
+  },
+  {
+    "id": "ellipse",
+    "chapter": 9,
+    "title": "Elipse: rotação de coordenadas",
+    "ref": "9.32",
+    "pages": [
+      200
+    ],
+    "description": "A elipse 5x²−4xy+8y²=36 tem semieixos 3 e 2.",
+    "steps": [
+      "Desenhe a elipse nos eixos próprios",
+      "Marque os semieixos",
+      "Gire pelo ângulo arctan(1/2)",
+      "Obtenha a elipse nas coordenadas originais"
+    ]
+  },
+  {
+    "id": "parabola",
+    "chapter": 9,
+    "title": "Parábola: rotação e translação",
+    "ref": "9.33",
+    "pages": [
+      200
+    ],
+    "description": "A equação x²+2xy+y²−2x+2y−3=0 tem vértice (−3/4,3/4).",
+    "steps": [
+      "Comece com v=u²/√2",
+      "Translade v por −3/(2√2)",
+      "Use x=(u+v)/√2, y=(u−v)/√2",
+      "O eixo da parábola está na direção (1,−1)"
+    ]
+  },
+  {
+    "id": "hyperbola",
+    "chapter": 9,
+    "title": "Hipérbole e suas assíntotas",
+    "ref": "9.34",
+    "pages": [
+      200,
+      201
+    ],
+    "description": "Completar quadrados dá (x+1)²−(y−2)²=1.",
+    "steps": [
+      "Desenhe u²−v²=1",
+      "Marque as assíntotas v=±u",
+      "Translade pelo vetor (−1,2)",
+      "O centro é (−1,2)"
+    ]
+  },
+  {
+    "id": "parallel",
+    "chapter": 9,
+    "title": "Cônica degenerada: retas paralelas",
+    "ref": "9.35",
+    "pages": [
+      201
+    ],
+    "description": "A equação se fatora como (x+2y−2)(x+2y−4)=0.",
+    "steps": [
+      "Defina s=x+2y",
+      "Fatore s²−6s+8",
+      "Desenhe s=2",
+      "Acrescente s=4: a cônica é o par de retas"
+    ]
+  },
+  {
+    "id": "cylinder",
+    "chapter": 9,
+    "title": "Cilindro elíptico",
+    "ref": "9.38",
+    "pages": [
+      202
+    ],
+    "description": "x²+y²+z²+2xy=1 reduz-se a 2u²+w²=1, com uma direção livre.",
+    "steps": [
+      "Desenhe a seção elíptica",
+      "Estenda a seção ao longo da direção livre",
+      "Gire para o eixo (1,−1,0)",
+      "A ausência de uma coordenada cria o cilindro"
+    ]
+  },
+  {
+    "id": "twoSheet",
+    "chapter": 9,
+    "title": "Hiperboloide de duas folhas",
+    "ref": "9.39",
+    "pages": [
+      202
+    ],
+    "description": "xy+yz+zx=1 tem assinatura (1,2) e eixo na direção (1,1,1).",
+    "steps": [
+      "Na base própria, escreva u²−(v²+w²)/2=1",
+      "Desenhe uma folha",
+      "Acrescente a folha oposta",
+      "Gire os eixos para obter xy+yz+zx=1"
+    ]
+  },
+  {
+    "id": "oneSheet",
+    "chapter": 9,
+    "title": "Hiperboloide de uma folha",
+    "ref": "9.40",
+    "pages": [
+      202
+    ],
+    "description": "x²+y²−z²=1 tem assinatura (2,1).",
+    "steps": [
+      "Comece com o círculo z=0",
+      "Aumente |z|",
+      "O raio da seção é √(1+z²)",
+      "As seções formam uma única superfície conexa"
+    ]
+  },
+  {
+    "id": "cone",
+    "chapter": 9,
+    "title": "Cone: o nível zero",
+    "ref": "9.41",
+    "pages": [
+      203
+    ],
+    "description": "x²+y²−z²=0 tem seções circulares de raio ",
+    "steps": [
+      "z|.|Comece no vértice",
+      "Aumente z para formar a parte superior",
+      "Diminua z para formar a parte inferior",
+      "No nível zero, as duas partes se encontram na origem"
+    ]
+  },
+  {
+    "id": "ellipsoid",
+    "chapter": 9,
+    "title": "Elipsoide e diagonalização em R³",
+    "ref": "9.42",
+    "pages": [
+      203
+    ],
+    "description": "x²+2y²+3z²−2xz=1 tem autovalores 2, 2+√2 e 2−√2, todos positivos.",
+    "steps": [
+      "Leia os três autovalores positivos",
+      "Construa os semieixos 1/√λ",
+      "Desenhe a superfície na base própria",
+      "Gire para as coordenadas originais"
+    ]
+  }
+]

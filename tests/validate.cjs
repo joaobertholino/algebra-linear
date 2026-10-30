@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),katex=require(path.join(root,'assets/katex/katex.min.js'));
+const elements=new Map();function element(key){if(!elements.has(key))elements.set(key,{innerHTML:'',textContent:'',value:key==='#speed'?'1':'',style:{},classList:{toggle(){},add(){},remove(){},contains(){return false}},setAttribute(){},addEventListener(){},focus(){},scrollIntoView(){}});return elements.get(key)}
+const errors=[];const ctx=vm.createContext({window:{katex,addEventListener(){}},document:{querySelector:element,querySelectorAll(){return[]},body:element('body'),addEventListener(){}},location:{hash:''},performance:{now(){return 0}},requestAnimationFrame(){return 1},cancelAnimationFrame(){},console:{error(e){errors.push(String(e))},log(){}}});
+for(const file of ['content.js','math-content.js','app.js'])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),ctx,{filename:file});
+let mathCount=0;for(const [id,m] of Object.entries(ctx.window.MATH_CONTENT)){for(const content of [m.explanation,m.proof]){const matches=content.match(/\$\$[\s\S]+?\$\$|\$[^$]+?\$/g)||[];for(const token of matches){const d=token.startsWith('$$');katex.renderToString(token.slice(d?2:1,d?-2:-1),{displayMode:d,throwOnError:true,strict:'error'});mathCount++}}}
+const result=vm.runInContext(`(()=>{let count=0;for(const l of lessons){location.hash='#'+l.id;load();const cs=controls(l.id);for(const edge of ['value','min','max']){for(const c of cs)params[c.key]=c.options?c.options[edge==='max'?c.options.length-1:0]:c[edge];for(const step of [0,333.333333,666.666667,1000]){progress=step;draw();if(/NaN|Infinity|undefined/.test(svg))throw new Error(l.id+' has invalid SVG');if(!svg.includes('<line')&&!svg.includes('<text'))throw new Error(l.id+' has no drawing');count++;}}}return count})()`,ctx);
+assert.equal(errors.length,0,errors.join('\n'));
+assert.equal(ctx.window.LESSONS.length,70);assert.equal(Object.keys(ctx.window.MATH_CONTENT).length,70);
+// Exact invariants for the representative operators used in the scenes.
+vm.runInContext(`if(dot([1,1,0],[.5,-.5,1])!==0)throw Error('GS');if(Math.abs(dot([.5,-.5,1],[-2/3,2/3,2/3]))>1e-9)throw Error('GS3');if(norm(cross([2,0,0],[1,1,0]))!==2)throw Error('Cross');`,ctx);
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert(!/\.pdf|assets\/pages/.test(html));assert(!fs.existsSync(path.join(root,'assets/apostila.pdf')));assert(!fs.existsSync(path.join(root,'assets/pages')));
+for(const m of html.matchAll(/(?:src|href)="([^"#]+)"/g)){if(!m[1].startsWith('http'))assert(fs.existsSync(path.join(root,m[1])),m[1])}
+console.log(`PASS: ${result} scene states, ${mathCount} LaTeX expressions, 70 lessons, local assets, no attached PDF.`);
